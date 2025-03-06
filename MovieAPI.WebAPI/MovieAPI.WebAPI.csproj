@@ -15,10 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Core\MovieAPI.Application\MovieAPI.Application.csproj" />
     <ProjectReference Include="..\Infrastrucure\Persistance\Persistance.csproj" />
   </ItemGroup>
 
