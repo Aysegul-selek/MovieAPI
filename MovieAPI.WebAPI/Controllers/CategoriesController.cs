@@ -7,5 +7,7 @@ namespace MovieAPI.WebAPI.Controllers
     public class CategoriesController : ControllerBase
     {
 
+
+
     }
 }
