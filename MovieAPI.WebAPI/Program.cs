@@ -14,9 +14,9 @@ builder.Services.AddScoped<UpdateCategoryCommandHandler>();
 
 builder.Services.AddScoped<GetMovieByIdQueryHandler>();
 builder.Services.AddScoped<GetMovieQueryHandler>();
-builder.Services.AddScoped<CreateCategoryCommandHandler>();
-builder.Services.AddScoped<UpdateCategoryCommandHandler>();
-builder.Services.AddScoped<RemoveCategoryCommandHandler>();
+builder.Services.AddScoped<CreateMovieCommandHandler>();
+builder.Services.AddScoped<UpdateMovieCommandHandler>();
+builder.Services.AddScoped<RemoveMovieCommandHandle>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(x =>
@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c=>
-    { c.SwaggerEndpoint("/swagger/v1/swager.json", "My Api v1");
+    { c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Api v1");
     });
 }
 
