@@ -8,11 +8,12 @@ namespace MovieAPI.Application.Features.MediatorDesignPattern.Results.CastResult
 {
     public class GetCastByIdQueryResult
     {
-        public GetCastByIdQueryResult(int castId)
-        {
-            CastId = castId;
-        }
-
         public int CastId { get; set; }
+        public string Title { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public string ImageUrl { get; set; }
+        public string? Overview { get; set; }
+        public string? Biography { get; set; }
     }
 }
