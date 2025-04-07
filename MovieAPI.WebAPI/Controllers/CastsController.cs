@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieAPI.Application.Features.MediatorDesignPattern.Commands.CastCommands;
 using MovieAPI.Application.Features.MediatorDesignPattern.Queries;
+using MovieAPI.Application.Features.MediatorDesignPattern.Queries.CastQueries;
 
 namespace MovieAPI.WebAPI.Controllers
 {
@@ -17,32 +18,32 @@ namespace MovieAPI.WebAPI.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public IActionResult CastList()
+        public async Task<IActionResult> CastList()
         {
-            var value = _mediator.Send(new GetCastQuery());
+            var value =await _mediator.Send(new GetCastQuery());
             return Ok(value);
         }
         [HttpPost]
-        public IActionResult CreateCast(CreateCastCommand command)
+        public async Task<IActionResult> CreateCast(CreateCastCommand command)
         {
-            _mediator.Send(command);
+           await _mediator.Send(command);
             return Ok("ekleme başarılı");
         }
         [HttpDelete]
-        public IActionResult DeleteCast(int id)
+        public async Task<IActionResult> DeleteCast(int id)
         {
-            _mediator.Send(new RemoveCastCommand(id));
+           await _mediator.Send(new RemoveCastCommand(id));
             return Ok("silme başarılı");
         }
         [HttpPut]
-        public IActionResult UpdateCast(UpdateCastCommand command)
+        public async Task<IActionResult> UpdateCast(UpdateCastCommand command)
         {
-            _mediator.Send(command);
+          await  _mediator.Send(command);
             return Ok("güncelleme başarılı");
             
         }
         [HttpGet("GetCastById")]
-        public IActionResult GetCastById(int id)
+        public  async Task<IActionResult> GetCastById(int id)
         {
             var value = _mediator.Send(new GetCastByIdQuery(id));
             return Ok(value);

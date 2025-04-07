@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace MovieAPI.Application.Features.MediatorDesignPattern.Handlers.CastHandlers
 {
     public class CreateCastCommandHandler : IRequestHandler<CreateCastCommand>
-    {private readonly MovieContext _movieContext;
+    {  private readonly MovieContext _movieContext;
 
         public CreateCastCommandHandler(MovieContext movieContext)
         {
