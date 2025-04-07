@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieAPI.Application.Features.MediatorDesignPattern.Queries
+namespace MovieAPI.Application.Features.MediatorDesignPattern.Queries.CastQueries
 {
-    public class GetCastQuery:IRequest<List<GetCastQueryResult>>
+    public class GetCastQuery : IRequest<List<GetCastQueryResult>>
     {
-        
+
     }
 }
