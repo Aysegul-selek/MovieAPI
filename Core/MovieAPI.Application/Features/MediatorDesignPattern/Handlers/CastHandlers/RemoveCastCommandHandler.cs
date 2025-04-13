@@ -18,12 +18,11 @@ namespace MovieAPI.Application.Features.MediatorDesignPattern.Handlers.CastHandl
             _context = context;
         }
 
-        public async Task IRequestHandler<RemoveCastCommand>.Handle(RemoveCastCommand request, CancellationToken cancellationToken)
+        public async Task Handle(RemoveCastCommand request, CancellationToken cancellationToken)
         {
             var values = await _context.Casts.FindAsync(request.CastId);
-                _context.Casts.Remove(values);
+            _context.Casts.Remove(values);
             await _context.SaveChangesAsync();
-            
         }
     }
 }
