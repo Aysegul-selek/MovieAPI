@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8AFF1A31-A36E-493D-9E90-814AFE3C8617}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAPI.WebAPI", "MovieAPI.WebAPI\MovieAPI.WebAPI.csproj", "{E7AF8852-E724-484E-B236-344DE7046710}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAPI.Application", "Core\MovieAPI.Application\MovieAPI.Application.csproj", "{C5E2E9DC-8EBE-42EF-94AF-0BC55DCA4C13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAPI.WebUI", "Frontend\MovieAPI.WebUI\MovieAPI.WebUI.csproj", "{5FE951C1-3267-4D72-BD01-38E9EF9B7892}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{C5E2E9DC-8EBE-42EF-94AF-0BC55DCA4C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5E2E9DC-8EBE-42EF-94AF-0BC55DCA4C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E2E9DC-8EBE-42EF-94AF-0BC55DCA4C13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE951C1-3267-4D72-BD01-38E9EF9B7892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE951C1-3267-4D72-BD01-38E9EF9B7892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE951C1-3267-4D72-BD01-38E9EF9B7892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE951C1-3267-4D72-BD01-38E9EF9B7892}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
